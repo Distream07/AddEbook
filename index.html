@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ajouter des Images</title>
+</head>
+<body>
+    <form id="imageForm">
+        <label for="images">URLs des images (séparées par des sauts de ligne):</label>
+        <textarea id="images" name="images" rows="10" cols="50" required></textarea>
+        <br>
+        <label for="galleryName">Nom de la galerie:</label>
+        <input type="text" id="galleryName" name="galleryName" required>
+        <br>
+        <label for="description">Description de la galerie:</label>
+        <textarea id="description" name="description" rows="4" cols="50" required></textarea>
+        <br>
+        <button type="submit">Ajouter les images</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
