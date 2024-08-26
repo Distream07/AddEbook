@@ -9,7 +9,7 @@ document.getElementById('imageForm').addEventListener('submit', async (event) =>
     const images = imagesText.split('\n').map(url => url.trim()).filter(url => url.length > 0);
 
     try {
-        const response = await fetch('http://localhost:3000/add-images', {
+        const response = await fetch('/add-images', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
